@@ -4,6 +4,7 @@ import math
 from math import pi
 import cmath
 from qiskit import QuantumCircuit, QuantumRegister, transpile, assemble, Aer, execute
+from qiskit.visualization import plot_histogram
 from qiskit.circuit import Gate
 from qiskit.extensions import UnitaryGate
 
@@ -63,3 +64,8 @@ qc5.append(fourth_x_gate, [qubits_circuit1[2], qubits_circuit1[3]])
 
 #Drawing the cccx circuit
 print(qc5.draw())
+
+
+
+
+
